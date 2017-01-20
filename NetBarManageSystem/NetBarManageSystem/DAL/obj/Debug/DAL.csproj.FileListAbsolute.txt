@@ -1,0 +1,7 @@
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\bin\Debug\DAL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\bin\Debug\DAL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\bin\Debug\Entity.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\bin\Debug\Entity.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\obj\Debug\DAL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,4 @@
+C:\Users\琚\Desktop\NetBarManageSystem\IDAL\bin\Debug\IDAL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\IDAL\bin\Debug\IDAL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\IDAL\obj\Debug\IDAL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\IDAL\obj\Debug\IDAL.pdb

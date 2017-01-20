@@ -1,0 +1,11 @@
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\Facade.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\Facade.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\BLL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\DAL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\BLL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\DAL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\obj\Debug\Facade.csprojResolveAssemblyReference.cache
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\obj\Debug\Facade.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\obj\Debug\Facade.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\Entity.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\Facade\bin\Debug\Entity.pdb

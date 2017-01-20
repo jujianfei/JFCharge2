@@ -1,0 +1,9 @@
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\bin\Debug\BLL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\bin\Debug\BLL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\bin\Debug\DAL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\bin\Debug\DAL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\obj\Debug\BLL.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\obj\Debug\BLL.pdb
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\bin\Debug\Entity.dll
+C:\Users\琚\Desktop\NetBarManageSystem\NetBarManageSystem\BLL\bin\Debug\Entity.pdb
