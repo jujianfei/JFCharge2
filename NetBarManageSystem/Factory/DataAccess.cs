@@ -13,9 +13,9 @@ namespace Factory
         private static readonly string AssemblyName = "DAL"; //程序集名称，即这个类所在的根文件名称
         private static readonly string db = ConfigurationManager.AppSettings["DB"];
 
-        public static IDAL.IUsers CreateUser()
+        public static IDAL.IUsers Users()
         {
-            string className = AssemblyName + "." +db;
+            string className = AssemblyName + "." +db+"Users";
             return (IDAL.IUsers)Assembly.Load(AssemblyName).CreateInstance(className); 
         }
     }

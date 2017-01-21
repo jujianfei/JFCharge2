@@ -6,3 +6,7 @@ C:\Users\琚\Desktop\NetBarManageSystem\Entity\bin\Debug\Entity.dll
 C:\Users\琚\Desktop\NetBarManageSystem\Entity\bin\Debug\Entity.pdb
 C:\Users\琚\Desktop\NetBarManageSystem\Entity\obj\Debug\Entity.dll
 C:\Users\琚\Desktop\NetBarManageSystem\Entity\obj\Debug\Entity.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Entity\bin\Debug\Entity.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Entity\bin\Debug\Entity.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Entity\obj\Debug\Entity.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Entity\obj\Debug\Entity.pdb

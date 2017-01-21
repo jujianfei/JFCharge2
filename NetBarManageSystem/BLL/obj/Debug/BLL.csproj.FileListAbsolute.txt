@@ -18,3 +18,14 @@ C:\Users\琚\Desktop\NetBarManageSystem\BLL\bin\Debug\Entity.pdb
 C:\Users\琚\Desktop\NetBarManageSystem\BLL\bin\Debug\Factory.pdb
 C:\Users\琚\Desktop\NetBarManageSystem\BLL\bin\Debug\IDAL.pdb
 C:\Users\琚\Desktop\NetBarManageSystem\BLL\obj\Debug\BLL.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\BLL.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\BLL.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\Entity.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\Factory.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\IDAL.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\Entity.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\Factory.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\bin\Debug\IDAL.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\obj\Debug\BLL.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\BLL\obj\Debug\BLL.pdb

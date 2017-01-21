@@ -28,6 +28,10 @@ namespace NetBarManageSystem
             {
                 MessageBox.Show("请输入用户名！", "温馨提示");
             }
+            else if (password == "") //判断密码是否为空
+            {
+                MessageBox.Show("请输入密码！", "温馨提示");
+            }
             else 
             {
                 Facade.Users user=new Facade.Users();
@@ -35,6 +39,20 @@ namespace NetBarManageSystem
                 if (result == false) //判断用户是否存在
                 {
                     MessageBox.Show("您输入的用户名不存在！", "温馨提示");
+                }
+                else
+                {
+                    //判断密码是否正确
+                    Facade.Users pwd = new Facade.Users();
+                    bool result2 = pwd.password(users);
+                    if (result2 == true)
+                    {
+                        this.DialogResult = DialogResult.OK; //上面的执行成功则显示主窗体
+                    }
+                    else
+                    {
+                        MessageBox.Show("密码错误，请重新输入！", "温馨提示");
+                    }
                 }
             }
         }

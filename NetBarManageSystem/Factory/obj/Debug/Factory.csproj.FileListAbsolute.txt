@@ -5,3 +5,12 @@ C:\Users\琚\Desktop\NetBarManageSystem\Factory\bin\Debug\IDAL.pdb
 C:\Users\琚\Desktop\NetBarManageSystem\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache
 C:\Users\琚\Desktop\NetBarManageSystem\Factory\obj\Debug\Factory.dll
 C:\Users\琚\Desktop\NetBarManageSystem\Factory\obj\Debug\Factory.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\bin\Debug\Factory.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\bin\Debug\Factory.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\bin\Debug\IDAL.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\bin\Debug\IDAL.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\obj\Debug\Factory.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\obj\Debug\Factory.pdb
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\bin\Debug\Entity.dll
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\Factory\bin\Debug\Entity.pdb
