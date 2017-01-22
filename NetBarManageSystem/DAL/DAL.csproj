@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SQLHelper.cs" />
+    <Compile Include="SQLServerConsumers.cs" />
     <Compile Include="SQLServerUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

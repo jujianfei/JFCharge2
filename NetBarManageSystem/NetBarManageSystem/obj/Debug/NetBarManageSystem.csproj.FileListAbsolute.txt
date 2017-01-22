@@ -57,3 +57,4 @@ C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\N
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.exe
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.pdb
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmAddUsers.resources
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmAddManager.resources

@@ -18,9 +18,11 @@ namespace NetBarManageSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            Facade.Users user = new Facade.Users();
             string username = txtUserName.Text.Trim(); //获取界面输入的用户名
             string password = txtPassword.Text.Trim(); //获取界面输入的密码
-            Entity.Users users = new Entity.Users();
+            Entity.GoAnyWhere.id = username;   // 将登陆id赋值给全局变量
+            Entity.Login users = new Entity.Login();
             users.username = username;
             users.password = password;
 
@@ -32,9 +34,8 @@ namespace NetBarManageSystem
             {
                 MessageBox.Show("请输入密码！", "温馨提示");
             }
-            else 
+            else
             {
-                Facade.Users user=new Facade.Users();
                 bool result = user.username(username);
                 if (result == false) //判断用户是否存在
                 {
@@ -47,7 +48,10 @@ namespace NetBarManageSystem
                     bool result2 = pwd.password(users);
                     if (result2 == true)
                     {
-                        this.DialogResult = DialogResult.OK; //上面的执行成功则显示主窗体
+                        //判断用户的类型
+                        string result3 = user.userlevel(username);
+                        Entity.GoAnyWhere.level = result3;
+                        this.DialogResult = DialogResult.OK;  //上面的执行成功则显示主窗体
                     }
                     else
                     {

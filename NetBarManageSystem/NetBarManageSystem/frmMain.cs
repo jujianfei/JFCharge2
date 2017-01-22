@@ -32,13 +32,38 @@ namespace NetBarManageSystem
 
         private void btnAddUser_Click(object sender, EventArgs e) //添加用户按钮
         {
-            frmAddUsers f = new frmAddUsers();
+            frmAddManager f = new frmAddManager();
             f.Show();
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e) //点击窗体右上角红叉
         {
             ExitSystem();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e) //窗体加载事件
+        {
+            if (Entity.GoAnyWhere.level.Trim() == "用户")
+            {
+                panel2.Hide();
+                panel3.Hide();
+            }
+            else if (Entity.GoAnyWhere.level.Trim() == "收银员")
+            {
+                panel1.Hide();
+                panel3.Hide();
+            }
+            else
+            {
+                panel1.Hide();
+                panel2.Hide();
+            }
+        }
+
+        private void btnAddUsers_Click(object sender, EventArgs e) //收银员添加消费用户
+        {
+            frmAddUsers f = new frmAddUsers();
+            f.ShowDialog();
         }
     }
 }

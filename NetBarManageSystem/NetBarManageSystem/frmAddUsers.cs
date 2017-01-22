@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ *==================
+ *创建人：琚建飞
+ *创建时间：2017/1/22 10:36:52
+ *说明：
+ *==================
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,38 +23,40 @@ namespace NetBarManageSystem
             InitializeComponent();
         }
 
-        private void btnOk_Click(object sender, EventArgs e)  //单击确定按钮
+        private void frmAddUsers_Load(object sender, EventArgs e)
         {
-            Entity.Users user = new Entity.Users();
-            user.username = txtUserName.Text.Trim();
-            user.password = txtPassword.Text.Trim();
-            //判断用户是否已经存在
-            Facade.Users fuser = new Facade.Users();
-            bool result = fuser.username(user.username);
-            if (result == true) //判断用户是否存在
+
+        }
+
+        private void button1_Click(object sender, EventArgs e) //点击确定添加按钮
+        {
+            Entity.Consumers cs = new Entity.Consumers();
+            cs.cardno = txtCardno.Text.Trim();
+            cs.name = txtName.Text.Trim();
+            cs.age = txtAge.Text.Trim();
+            cs.gender = cboGender.Text.Trim();
+            cs.money = txtAddMoney.Text.Trim();
+            cs.status = cboStatus.Text.Trim();
+            cs.sno = Entity.GoAnyWhere.id;
+            cs.addtime = DateTime.Now;
+            //将界面获取的数据插入到数据库中
+            Facade.Consumers consumer = new Facade.Consumers();
+            int result = consumer.addconsumers(cs);   //插入到消费者信息表
+            if (result > 0)
             {
-                MessageBox.Show("您输入的用户名已存在！", "温馨提示");
+                MessageBox.Show("添加成功！", "温馨提示");
+                //将消费者信息插入到登录表中
+                Entity.Login user = new Entity.Login();
+                user.username = txtCardno.Text.Trim();
+                user.password = "123456";
+                user.level = "用户";
+                user.status = cboStatus.Text.Trim();
+                Facade.Users fuser = new Facade.Users();
+                int result2 = fuser.addusers(user);
             }
             else
             {
-                int result2 = fuser.addusers(user);
-                if (result2 > 0)
-                {
-                    MessageBox.Show("添加用户成功！", "温馨提示");
-                }
-            }
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e) //删除用户按钮
-        {
-            Entity.Users user = new Entity.Users();
-            user.username = txtUserName.Text.Trim();
-            user.password = txtPassword.Text.Trim();
-            Facade.Users fuser = new Facade.Users();
-            int result = fuser.deleteusers(user);
-            if (result>0)
-            {
-                MessageBox.Show("删除成功！","温馨提示");
+                MessageBox.Show("添加失败，请联系管理员","温馨提示");
             }
         }
     }

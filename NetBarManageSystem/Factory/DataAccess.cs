@@ -18,5 +18,11 @@ namespace Factory
             string className = AssemblyName + "." +db+"Users";
             return (IDAL.IUsers)Assembly.Load(AssemblyName).CreateInstance(className); 
         }
+
+        public static IDAL.IConsumers Consumers()
+        {
+            string className = AssemblyName + "." + db + "Consumers";
+            return (IDAL.IConsumers)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
     }
 }

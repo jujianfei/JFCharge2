@@ -5,9 +5,11 @@ using System.Text;
 
 namespace Entity
 {
-    public class Users
+    public class Login
     {
         public string username { get; set; }
         public string password { get; set; }
+        public string level { get; set; }
+        public string status { get; set; }
     }
 }
