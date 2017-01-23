@@ -65,5 +65,17 @@ namespace NetBarManageSystem
             frmAddUsers f = new frmAddUsers();
             f.ShowDialog();
         }
+
+        private void txtCheck_Click(object sender, EventArgs e)  //查看所有消费者数据
+        {
+            frmConsumersInfo f = new frmConsumersInfo();
+            f.ShowDialog();
+        }
+
+        private void btnRecharge_Click(object sender, EventArgs e) //单击用户充值按钮
+        {
+            frmConsumerRecharge f = new frmConsumerRecharge();
+            f.ShowDialog();
+        }
     }
 }

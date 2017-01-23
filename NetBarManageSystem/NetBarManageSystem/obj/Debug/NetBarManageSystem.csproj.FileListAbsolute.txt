@@ -58,3 +58,6 @@ C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\N
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.pdb
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmAddUsers.resources
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmAddManager.resources
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmConsumersInfo.resources
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmModifyCsInfo.resources
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmConsumerRecharge.resources

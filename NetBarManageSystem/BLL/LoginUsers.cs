@@ -6,8 +6,13 @@ using System.Windows.Forms;
 
 namespace BLL
 {
-    public class Users
+    public class LoginUsers
     {
+        IDAL.IUsers iu;
+        public LoginUsers()
+        {
+            iu = Factory.DataAccess.Users();
+        }
         #region 判断用户是否存在
         /// <summary>
         /// 判断用户是否存在
@@ -16,9 +21,7 @@ namespace BLL
         /// <returns></returns>
         public bool SelectUser(string username)
         {
-            IDAL.IUsers iu = Factory.DataAccess.Users();
-            bool result = iu.SelectUser(username);
-            return result;
+            return iu.SelectUser(username);
         }
         #endregion
 
@@ -30,9 +33,7 @@ namespace BLL
         /// <returns></returns>
         public bool JudgePassword(Entity.Login user)
         {
-            IDAL.IUsers iu = Factory.DataAccess.Users();
-            bool result = iu.JudgePassword(user);
-            return result;
+            return iu.JudgePassword(user);
         }
         #endregion
 
@@ -44,9 +45,7 @@ namespace BLL
         /// <returns></returns>
         public string UserLevel(string username)
         {
-            IDAL.IUsers iu = Factory.DataAccess.Users();
-            string result = iu.UserLevel(username);
-            return result;
+            return iu.UserLevel(username);
         }
         #endregion
 
@@ -58,9 +57,7 @@ namespace BLL
         /// <returns></returns>
         public int AddUsers(Entity.Login user)
         {
-            IDAL.IUsers iu = Factory.DataAccess.Users();
-            int result = iu.AddUsers(user);
-            return result;
+            return iu.AddUsers(user);
         }
         #endregion
 
@@ -72,9 +69,7 @@ namespace BLL
         /// <returns></returns>
         public int DeleteUsers(Entity.Login user)
         {
-            IDAL.IUsers iu = Factory.DataAccess.Users();
-            int result = iu.DeleteUsers(user);
-            return result;
+            return iu.DeleteUsers(user);
         }
         #endregion
 

@@ -70,7 +70,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(157, 154);
+            this.btnOk.Location = new System.Drawing.Point(157, 158);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(75, 154);
+            this.btnDelete.Location = new System.Drawing.Point(75, 158);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 5;
@@ -88,18 +88,18 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // frmAddUsers
+            // frmAddManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 227);
+            this.ClientSize = new System.Drawing.Size(335, 241);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
-            this.Name = "frmAddUsers";
+            this.Name = "frmAddManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "添加用户窗体";
             this.ResumeLayout(false);

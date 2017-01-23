@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(90, 66);
+            this.label1.Location = new System.Drawing.Point(81, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 21);
             this.label1.TabIndex = 0;
@@ -56,24 +56,24 @@
             // txtCardno
             // 
             this.txtCardno.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtCardno.Location = new System.Drawing.Point(216, 65);
+            this.txtCardno.Location = new System.Drawing.Point(207, 106);
             this.txtCardno.Name = "txtCardno";
-            this.txtCardno.Size = new System.Drawing.Size(136, 31);
+            this.txtCardno.Size = new System.Drawing.Size(210, 31);
             this.txtCardno.TabIndex = 1;
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtName.Location = new System.Drawing.Point(473, 63);
+            this.txtName.Location = new System.Drawing.Point(525, 106);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(136, 31);
+            this.txtName.Size = new System.Drawing.Size(196, 31);
             this.txtName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(391, 66);
+            this.label2.Location = new System.Drawing.Point(443, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 21);
             this.label2.TabIndex = 2;
@@ -82,16 +82,16 @@
             // txtAge
             // 
             this.txtAge.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtAge.Location = new System.Drawing.Point(216, 134);
+            this.txtAge.Location = new System.Drawing.Point(207, 175);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(136, 31);
+            this.txtAge.Size = new System.Drawing.Size(210, 31);
             this.txtAge.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(134, 134);
+            this.label3.Location = new System.Drawing.Point(125, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 21);
             this.label3.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(391, 134);
+            this.label4.Location = new System.Drawing.Point(443, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 21);
             this.label4.TabIndex = 6;
@@ -110,16 +110,16 @@
             // txtAddMoney
             // 
             this.txtAddMoney.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtAddMoney.Location = new System.Drawing.Point(216, 197);
+            this.txtAddMoney.Location = new System.Drawing.Point(207, 238);
             this.txtAddMoney.Name = "txtAddMoney";
-            this.txtAddMoney.Size = new System.Drawing.Size(136, 31);
+            this.txtAddMoney.Size = new System.Drawing.Size(210, 31);
             this.txtAddMoney.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(90, 203);
+            this.label5.Location = new System.Drawing.Point(81, 244);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 21);
             this.label5.TabIndex = 8;
@@ -129,7 +129,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(391, 200);
+            this.label6.Location = new System.Drawing.Point(443, 243);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 21);
             this.label6.TabIndex = 10;
@@ -142,11 +142,12 @@
             this.cboStatus.Items.AddRange(new object[] {
             "允许登录",
             "禁止登录"});
-            this.cboStatus.Location = new System.Drawing.Point(473, 199);
+            this.cboStatus.Location = new System.Drawing.Point(525, 241);
             this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(136, 29);
+            this.cboStatus.Size = new System.Drawing.Size(196, 29);
             this.cboStatus.TabIndex = 12;
             this.cboStatus.Text = "允许登录";
+            this.cboStatus.SelectedIndexChanged += new System.EventHandler(this.cboStatus_SelectedIndexChanged);
             // 
             // cboGender
             // 
@@ -155,16 +156,16 @@
             this.cboGender.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.cboGender.Location = new System.Drawing.Point(473, 136);
+            this.cboGender.Location = new System.Drawing.Point(525, 179);
             this.cboGender.Name = "cboGender";
-            this.cboGender.Size = new System.Drawing.Size(136, 29);
+            this.cboGender.Size = new System.Drawing.Size(196, 29);
             this.cboGender.TabIndex = 13;
             this.cboGender.Text = "男";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(514, 270);
+            this.button1.Location = new System.Drawing.Point(626, 312);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 30);
             this.button1.TabIndex = 14;
@@ -176,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 360);
+            this.ClientSize = new System.Drawing.Size(803, 449);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboGender);
             this.Controls.Add(this.cboStatus);

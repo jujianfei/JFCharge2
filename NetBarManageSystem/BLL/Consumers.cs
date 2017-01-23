@@ -9,11 +9,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace BLL
 {
     public class Consumers
     {
+        IDAL.IConsumers ic;
+        public Consumers()
+        {
+            ic = Factory.DataAccess.Consumers();
+        }
         #region 添加消费者用户
         /// <summary>
         /// 添加消费者用户
@@ -22,9 +28,56 @@ namespace BLL
         /// <returns></returns>
         public int AddConsumers(Entity.Consumers cs)
         {
-            IDAL.IConsumers ic = Factory.DataAccess.Consumers();
-            int result= ic.AddConsumers(cs);
-            return result;
+            return ic.AddConsumers(cs);
+        }
+        #endregion
+
+        #region  查询所有消费者信息
+        /// <summary>
+        /// 查询所有消费者信息
+        /// </summary>
+        /// <returns></returns>
+        public DataTable CheckConsumers()
+        {
+            return ic.CheckConsumers();
+        }
+        #endregion
+
+        #region 根据身份证号返回一行信息
+        /// <summary>
+        /// 根据身份证号返回一行信息
+        /// </summary>
+        /// <param name="cardno">身份证号</param>
+        /// <returns></returns>
+        public DataTable ReturnConsumerinfo(string cardno)
+        {
+            return ic.ReturnConsumerinfo(cardno);
+        }
+        #endregion
+
+        #region 更新登录用户状态信息
+        /// <summary>
+        /// 更新登录用户状态信息
+        /// </summary>
+        /// <param name="cardno">用户id</param>
+        /// <param name="status">用户状态</param>
+        /// <returns></returns>
+        public int ModifyUserStatus(string cardno, string status)
+        {
+            return ic.ModifyUserStatus(cardno,status);
+        }
+        #endregion
+
+        #region 消费者充值
+        /// <summary>
+        /// 消费者充值
+        /// </summary>
+        /// <param name="cardno">身份证号</param>
+        /// <param name="money">充值金额</param>
+        /// <returns></returns>
+        public int ConsumerRecharge(string cardno, int money)
+        {
+            return ic.ConsumerRecharge(cardno,money);
         }
         #endregion
     }

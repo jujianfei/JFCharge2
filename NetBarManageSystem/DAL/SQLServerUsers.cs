@@ -81,9 +81,9 @@ namespace DAL
         }
         #endregion
 
-        #region 删除用户
+        #region 删除登录用户
         /// <summary>
-        /// 删除用户
+        /// 删除登录用户
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns></returns>

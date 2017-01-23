@@ -21,8 +21,10 @@ namespace NetBarManageSystem
             Entity.Login user = new Entity.Login();
             user.username = txtUserName.Text.Trim();
             user.password = txtPassword.Text.Trim();
+            user.level = "收银员";
+            user.status = "允许登录";
             //判断用户是否已经存在
-            Facade.Users fuser = new Facade.Users();
+            Facade.LoginUsers fuser = new Facade.LoginUsers();
             bool result = fuser.username(user.username);
             if (result == true) //判断用户是否存在
             {
@@ -43,7 +45,7 @@ namespace NetBarManageSystem
             Entity.Login user = new Entity.Login();
             user.username = txtUserName.Text.Trim();
             user.password = txtPassword.Text.Trim();
-            Facade.Users fuser = new Facade.Users();
+            Facade.LoginUsers fuser = new Facade.LoginUsers();
             int result = fuser.deleteusers(user);
             if (result>0)
             {

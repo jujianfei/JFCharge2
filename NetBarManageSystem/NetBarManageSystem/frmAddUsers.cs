@@ -51,13 +51,18 @@ namespace NetBarManageSystem
                 user.password = "123456";
                 user.level = "用户";
                 user.status = cboStatus.Text.Trim();
-                Facade.Users fuser = new Facade.Users();
+                Facade.LoginUsers fuser = new Facade.LoginUsers();
                 int result2 = fuser.addusers(user);
             }
             else
             {
                 MessageBox.Show("添加失败，请联系管理员","温馨提示");
             }
+        }
+
+        private void cboStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

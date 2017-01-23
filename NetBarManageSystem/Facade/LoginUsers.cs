@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Facade
 {
-    public class Users
+    public class LoginUsers
     {
-        BLL.Users users;
-        public Users()
+        BLL.LoginUsers users;
+        public LoginUsers()
         {
-            users = new BLL.Users();
+            users = new BLL.LoginUsers();
         }
         public bool username(string username) //判断用户是否存在
         {

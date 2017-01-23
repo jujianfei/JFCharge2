@@ -18,7 +18,7 @@ namespace NetBarManageSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Facade.Users user = new Facade.Users();
+            Facade.LoginUsers user = new Facade.LoginUsers();
             string username = txtUserName.Text.Trim(); //获取界面输入的用户名
             string password = txtPassword.Text.Trim(); //获取界面输入的密码
             Entity.GoAnyWhere.id = username;   // 将登陆id赋值给全局变量
@@ -44,7 +44,7 @@ namespace NetBarManageSystem
                 else
                 {
                     //判断密码是否正确
-                    Facade.Users pwd = new Facade.Users();
+                    Facade.LoginUsers pwd = new Facade.LoginUsers();
                     bool result2 = pwd.password(users);
                     if (result2 == true)
                     {

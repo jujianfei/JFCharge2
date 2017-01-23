@@ -32,10 +32,12 @@
             this.btnLoginManage = new System.Windows.Forms.Button();
             this.btnExitSystem = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtCheck = new System.Windows.Forms.Button();
+            this.btnAddUsers = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnAddUsers = new System.Windows.Forms.Button();
+            this.btnRecharge = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -43,7 +45,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnLoginManage);
             this.panel1.Controls.Add(this.btnExitSystem);
             this.panel1.Location = new System.Drawing.Point(24, 43);
             this.panel1.Name = "panel1";
@@ -52,7 +53,7 @@
             // 
             // btnLoginManage
             // 
-            this.btnLoginManage.Location = new System.Drawing.Point(39, 131);
+            this.btnLoginManage.Location = new System.Drawing.Point(33, 97);
             this.btnLoginManage.Name = "btnLoginManage";
             this.btnLoginManage.Size = new System.Drawing.Size(75, 23);
             this.btnLoginManage.TabIndex = 1;
@@ -72,12 +73,34 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnRecharge);
+            this.panel2.Controls.Add(this.txtCheck);
             this.panel2.Controls.Add(this.btnAddUsers);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(524, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(148, 281);
             this.panel2.TabIndex = 2;
+            // 
+            // txtCheck
+            // 
+            this.txtCheck.Location = new System.Drawing.Point(30, 138);
+            this.txtCheck.Name = "txtCheck";
+            this.txtCheck.Size = new System.Drawing.Size(100, 23);
+            this.txtCheck.TabIndex = 2;
+            this.txtCheck.Text = "查看用户数据";
+            this.txtCheck.UseVisualStyleBackColor = true;
+            this.txtCheck.Click += new System.EventHandler(this.txtCheck_Click);
+            // 
+            // btnAddUsers
+            // 
+            this.btnAddUsers.Location = new System.Drawing.Point(30, 81);
+            this.btnAddUsers.Name = "btnAddUsers";
+            this.btnAddUsers.Size = new System.Drawing.Size(100, 23);
+            this.btnAddUsers.TabIndex = 1;
+            this.btnAddUsers.Text = "添加用户";
+            this.btnAddUsers.UseVisualStyleBackColor = true;
+            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click);
             // 
             // label1
             // 
@@ -90,6 +113,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnLoginManage);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(288, 62);
             this.panel3.Name = "panel3";
@@ -105,21 +129,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "管理员界面";
             // 
-            // btnAddUsers
+            // btnRecharge
             // 
-            this.btnAddUsers.Location = new System.Drawing.Point(45, 81);
-            this.btnAddUsers.Name = "btnAddUsers";
-            this.btnAddUsers.Size = new System.Drawing.Size(75, 23);
-            this.btnAddUsers.TabIndex = 1;
-            this.btnAddUsers.Text = "添加用户";
-            this.btnAddUsers.UseVisualStyleBackColor = true;
-            this.btnAddUsers.Click += new System.EventHandler(this.btnAddUsers_Click);
+            this.btnRecharge.Location = new System.Drawing.Point(33, 196);
+            this.btnRecharge.Name = "btnRecharge";
+            this.btnRecharge.Size = new System.Drawing.Size(97, 23);
+            this.btnRecharge.TabIndex = 3;
+            this.btnRecharge.Text = "用户充值";
+            this.btnRecharge.UseVisualStyleBackColor = true;
+            this.btnRecharge.Click += new System.EventHandler(this.btnRecharge_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 480);
+            this.ClientSize = new System.Drawing.Size(992, 588);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -147,6 +171,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddUsers;
+        private System.Windows.Forms.Button txtCheck;
+        private System.Windows.Forms.Button btnRecharge;
 
     }
 }

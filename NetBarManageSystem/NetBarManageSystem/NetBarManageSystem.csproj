@@ -56,6 +56,18 @@
     <Compile Include="frmAddUsers.Designer.cs">
       <DependentUpon>frmAddUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsumerRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsumerRecharge.Designer.cs">
+      <DependentUpon>frmConsumerRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsumersInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsumersInfo.Designer.cs">
+      <DependentUpon>frmConsumersInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,12 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyCsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyCsInfo.Designer.cs">
+      <DependentUpon>frmModifyCsInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,11 +100,20 @@
     <EmbeddedResource Include="frmAddUsers.resx">
       <DependentUpon>frmAddUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsumerRecharge.resx">
+      <DependentUpon>frmConsumerRecharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsumersInfo.resx">
+      <DependentUpon>frmConsumersInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyCsInfo.resx">
+      <DependentUpon>frmModifyCsInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
