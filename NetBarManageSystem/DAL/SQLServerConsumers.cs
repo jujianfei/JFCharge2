@@ -2,7 +2,7 @@
  * ==================
  * 创建人：琚建飞
  * 创建时间：2017/1/22 11:23:21
- * 说明：
+ * 说明：消费者用户相关类
  * ==================
  */
 using System;
@@ -35,7 +35,7 @@ namespace DAL
             //将数据插入到注册记录表中
             DateTime dt = DateTime.Now;
             string sno = Entity.GoAnyWhere.id;
-            string sql2 = "insert into Register values('"+sno+"','"+dt+"','"+cs.cardno+"','"+cs.money+"')";
+            string sql2 = "insert into Register values('" + sno + "','" + dt + "','" + cs.cardno + "','" + cs.money + "')";
             sqlhelper.ExecuteNonQuery(sql2);
             //返回影响的行数
             return reslut;
@@ -52,6 +52,35 @@ namespace DAL
         {
             string sql = "select * from Users";
             return sqlhelper.ExecuteQuery(sql);
+        }
+        #endregion
+
+        #region 根据用户id查看用户余额
+        /// <summary>
+        /// 根据用户id查看用户余额
+        /// </summary>
+        /// <param name="cardno">用户id</param>
+        /// <returns></returns>
+        public string CheckMoney(string cardno)
+        {
+            string sql = "select Money from Users where CardNo='" + cardno + "'";
+            DataTable dt = sqlhelper.ExecuteQuery(sql);
+            string sql2 = "update Users set Money=Money-1 where CardNo='" + cardno + "'";
+            sqlhelper.ExecuteNonQuery(sql2);
+            return Convert.ToString(dt.Rows[0][0]);
+        }
+        #endregion
+
+        #region 根据用户id更新用户余额
+        /// <summary>
+        /// 根据用户id更新用户余额
+        /// </summary>
+        /// <param name="cardno">用户id</param>
+        /// <param name="money">最新余额</param>
+        public void UpdateMoney(string cardno,int money)
+        {
+            string sql = "update Users set Money='" + money + "' where CardNo='" + cardno + "'";
+            sqlhelper.ExecuteNonQuery(sql);
         }
         #endregion
 
@@ -77,7 +106,7 @@ namespace DAL
         /// <returns></returns>
         public int ModifyUserStatus(string cardno, string status)
         {
-            string sql = "update Users set Status='" + status + "' where CardNo='"+cardno+"'";
+            string sql = "update Users set Status='" + status + "' where CardNo='" + cardno + "'";
             return sqlhelper.ExecuteNonQuery(sql);
         }
         #endregion
@@ -92,7 +121,7 @@ namespace DAL
         public int ConsumerRecharge(string cardno, int money)
         {
             //查询数据库现有余额
-            string sql = "select Money from Users where CardNo='"+cardno+"'";
+            string sql = "select Money from Users where CardNo='" + cardno + "'";
             DataTable dt = sqlhelper.ExecuteQuery(sql);
             int result = Convert.ToInt32(dt.Rows[0][0]);
             //现有余额和充值金额相加

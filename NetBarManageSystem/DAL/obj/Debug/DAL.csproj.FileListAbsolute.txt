@@ -25,3 +25,8 @@ C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\bin\Debug\D
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\DAL\obj\Debug\DAL.dll
 C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\DAL\obj\Debug\DAL.pdb
+C:\Users\琚\Desktop\gittest2\NetBarManageSystem\NetBarManageSystem\bin\Debug\DAL.dll
+C:\Users\琚\Desktop\gittest2\NetBarManageSystem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\琚\Desktop\gittest2\NetBarManageSystem\DAL\obj\Debug\DAL.dll
+C:\Users\琚\Desktop\gittest2\NetBarManageSystem\DAL\obj\Debug\DAL.pdb
+C:\Users\琚\Desktop\gittest2\NetBarManageSystem\NetBarManageSystem\bin\Debug\DAL.pdb

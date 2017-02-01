@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * ==================
+ * 创建人：琚建飞
+ * 创建时间：2017年1月26日12:10:40
+ * 说明：登录用户相关类
+ * ==================
+ */
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;

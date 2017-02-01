@@ -43,6 +43,30 @@ namespace BLL
         }
         #endregion
 
+        #region 根据用户id查看用户余额
+        /// <summary>
+        /// 根据用户id查看用户余额
+        /// </summary>
+        /// <param name="cardno">用户id</param>
+        /// <returns></returns>
+        public string CheckMoney(string cardno)
+        {
+            return ic.CheckMoney(cardno);
+        }
+        #endregion
+
+         #region 根据用户id更新用户余额
+        /// <summary>
+        /// 根据用户id更新用户余额
+        /// </summary>
+        /// <param name="cardno">用户id</param>
+        /// <param name="money">最新余额</param>
+        public void UpdateMoney(string cardno, int money)
+        {
+             ic.UpdateMoney(cardno,money);
+        }
+        #endregion
+
         #region 根据身份证号返回一行信息
         /// <summary>
         /// 根据身份证号返回一行信息
