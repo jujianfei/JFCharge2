@@ -56,6 +56,18 @@
     <Compile Include="frmAddUsers.Designer.cs">
       <DependentUpon>frmAddUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCheckConsumeStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckConsumeStation.Designer.cs">
+      <DependentUpon>frmCheckConsumeStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsumerBackMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsumerBackMoney.Designer.cs">
+      <DependentUpon>frmConsumerBackMoney.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsumerRecharge.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddUsers.resx">
       <DependentUpon>frmAddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckConsumeStation.resx">
+      <DependentUpon>frmCheckConsumeStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsumerBackMoney.resx">
+      <DependentUpon>frmConsumerBackMoney.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsumerRecharge.resx">
       <DependentUpon>frmConsumerRecharge.cs</DependentUpon>

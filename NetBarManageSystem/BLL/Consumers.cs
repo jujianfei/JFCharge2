@@ -43,7 +43,7 @@ namespace BLL
         }
         #endregion
 
-        #region 根据用户id查看用户余额
+        #region 根据用户id查看用户余额并进行减一更新
         /// <summary>
         /// 根据用户id查看用户余额
         /// </summary>
@@ -55,7 +55,19 @@ namespace BLL
         }
         #endregion
 
-         #region 根据用户id更新用户余额
+        #region 根据用户id查看用户余额
+        /// <summary>
+        /// 根据用户id查看用户余额
+        /// </summary>
+        /// <param name="cardno"></param>
+        /// <returns></returns>
+        public string LookMoney(string cardno)
+        {
+            return ic.LookMoney(cardno);
+        }
+        #endregion
+
+        #region 根据用户id更新用户余额
         /// <summary>
         /// 根据用户id更新用户余额
         /// </summary>
@@ -63,7 +75,7 @@ namespace BLL
         /// <param name="money">最新余额</param>
         public void UpdateMoney(string cardno, int money)
         {
-             ic.UpdateMoney(cardno,money);
+            ic.UpdateMoney(cardno, money);
         }
         #endregion
 
@@ -88,7 +100,7 @@ namespace BLL
         /// <returns></returns>
         public int ModifyUserStatus(string cardno, string status)
         {
-            return ic.ModifyUserStatus(cardno,status);
+            return ic.ModifyUserStatus(cardno, status);
         }
         #endregion
 
@@ -101,7 +113,42 @@ namespace BLL
         /// <returns></returns>
         public int ConsumerRecharge(string cardno, int money)
         {
-            return ic.ConsumerRecharge(cardno,money);
+            return ic.ConsumerRecharge(cardno, money);
+        }
+        #endregion
+
+        #region 用户下机，向消费记录表中插入一条信息
+        /// <summary>
+        /// 用户下机，向消费记录表中插入一条信息
+        /// </summary>
+        /// <param name="money">消费记录实体</param>
+        public void InsertConsumeInfo(Entity.Money money)
+        {
+            ic.InsertConsumeInfo(money);
+        }
+        #endregion
+
+        #region 根据id查询该id的消费记录信息
+        /// <summary>
+        /// 根据id查询该id的消费记录信息
+        /// </summary>
+        /// <param name="cardno"></param>
+        /// <returns></returns>
+        public DataTable CheckConsumeInfo(string cardno)
+        {
+            return ic.CheckConsumeInfo(cardno);
+        }
+        #endregion
+
+         #region 添加一行退卡信息
+        /// <summary>
+        /// 添加一行退卡信息
+        /// </summary>
+        /// <param name="backinfo"></param>
+        /// <returns></returns>
+        public int AddBackInfo(Entity.BackMoney backinfo)
+        {
+            return ic.AddBackInfo(backinfo);
         }
         #endregion
     }

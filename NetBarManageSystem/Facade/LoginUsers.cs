@@ -22,7 +22,7 @@ namespace Facade
             return users.UserLevel(username);
         }
 
-        public bool password(Entity.Login user) //判断用户密码是否正确
+        public string password(Entity.Login user) //判断用户密码是否正确，并返回状态信息
         {
             return users.JudgePassword(user);
         }

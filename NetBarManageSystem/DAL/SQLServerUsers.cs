@@ -55,22 +55,21 @@ namespace DAL
         }
         #endregion
 
-        #region 判断用户密码是否正确
+        #region 判断用户密码是否正确，并返回状态信息
         /// <summary>
-        /// 判断用户密码是否正确
+        /// 判断用户密码是否正确，并返回状态信息
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns></returns>
-        public bool JudgePassword(Entity.Login user)
+        public string JudgePassword(Entity.Login user)
         {
-            bool flag = false;
-            string sql = "select UserName,Password from Login where UserName='" + user.username + "' And Password='" + user.password + "'";
+            string sql = "select UserName,Password,Status from Login where UserName='" + user.username + "' And Password='" + user.password + "'";
             DataTable dt = sqlhelper.ExecuteQuery(sql);
             if (dt.Rows.Count > 0)
             {
-                flag = true;
+                return Convert.ToString(dt.Rows[0][2]);
             }
-            return flag;
+            return Convert.ToString(false);
         }
         #endregion
 

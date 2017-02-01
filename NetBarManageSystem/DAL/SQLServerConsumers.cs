@@ -55,7 +55,7 @@ namespace DAL
         }
         #endregion
 
-        #region 根据用户id查看用户余额
+        #region 根据用户id查看用户余额,并进行减一更新
         /// <summary>
         /// 根据用户id查看用户余额
         /// </summary>
@@ -67,6 +67,20 @@ namespace DAL
             DataTable dt = sqlhelper.ExecuteQuery(sql);
             string sql2 = "update Users set Money=Money-1 where CardNo='" + cardno + "'";
             sqlhelper.ExecuteNonQuery(sql2);
+            return Convert.ToString(dt.Rows[0][0]);
+        }
+        #endregion
+
+        #region 根据用户id查看用户余额
+        /// <summary>
+        /// 根据用户id查看用户余额
+        /// </summary>
+        /// <param name="cardno"></param>
+        /// <returns></returns>
+        public string LookMoney(string cardno)
+        {
+            string sql = "select Money from Users where CardNo='" + cardno + "'";
+            DataTable dt = sqlhelper.ExecuteQuery(sql);
             return Convert.ToString(dt.Rows[0][0]);
         }
         #endregion
@@ -107,6 +121,8 @@ namespace DAL
         public int ModifyUserStatus(string cardno, string status)
         {
             string sql = "update Users set Status='" + status + "' where CardNo='" + cardno + "'";
+            string sql2= "update Login set Status='" + status + "' where UserName='" + cardno + "'";
+            sqlhelper.ExecuteNonQuery(sql2);
             return sqlhelper.ExecuteNonQuery(sql);
         }
         #endregion
@@ -135,6 +151,44 @@ namespace DAL
             string sql2 = "update Users set Money='" + Smoney + "' where CardNo='" + cardno + "'";
             //返回影响行数信息
             return sqlhelper.ExecuteNonQuery(sql2);
+        }
+        #endregion
+
+        #region 用户下机，向消费记录表中插入一条信息
+        /// <summary>
+        /// 用户下机，向消费记录表中插入一条信息
+        /// </summary>
+        /// <param name="money">消费记录实体</param>
+        public void InsertConsumeInfo(Entity.Money money)
+        {
+            string sql = "insert into ConsumeForm values('" + money.cardno + "','" + money.logintime + "','" + money.offtime + "','" + money.consumetime + "','" + money.consume + "','" + money.remaindermoney + "')";
+            sqlhelper.ExecuteNonQuery(sql);
+        }
+        #endregion
+
+        #region 根据id查询该id的消费记录信息
+        /// <summary>
+        /// 根据id查询该id的消费记录信息
+        /// </summary>
+        /// <param name="cardno"></param>
+        /// <returns></returns>
+        public DataTable CheckConsumeInfo(string cardno)
+        {
+            string sql = "select * from ConsumeForm where CardNo='"+cardno+"'";
+            return sqlhelper.ExecuteQuery(sql);
+        }
+        #endregion
+
+        #region 添加一行退卡信息
+        /// <summary>
+        /// 添加一行退卡信息
+        /// </summary>
+        /// <param name="backinfo"></param>
+        /// <returns></returns>
+        public int AddBackInfo(Entity.BackMoney backinfo)
+        {
+            string sql = "insert into BackMoney values('" + backinfo.cardno + "','" + backinfo.money + "','" + backinfo.operater + "','" + backinfo.time + "')";
+            return sqlhelper.ExecuteNonQuery(sql);
         }
         #endregion
     }

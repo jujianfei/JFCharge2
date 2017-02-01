@@ -86,3 +86,5 @@ C:\Users\琚\Desktop\gittest2\NetBarManageSystem\NetBarManageSystem\obj\Debug\Ne
 C:\Users\琚\Desktop\gittest2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmModifyCsInfo.resources
 C:\Users\琚\Desktop\gittest2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.Properties.Resources.resources
 C:\Users\琚\Desktop\gittest2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.csproj.GenerateResource.Cache
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmCheckConsumeStation.resources
+C:\Users\琚\Desktop\JFCharge2\NetBarManageSystem\NetBarManageSystem\obj\Debug\NetBarManageSystem.frmConsumerBackMoney.resources

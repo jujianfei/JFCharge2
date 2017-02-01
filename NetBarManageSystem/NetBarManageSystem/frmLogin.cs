@@ -45,17 +45,22 @@ namespace NetBarManageSystem
                 {
                     //判断密码是否正确
                     Facade.LoginUsers pwd = new Facade.LoginUsers();
-                    bool result2 = pwd.password(users);
-                    if (result2 == true)
+                    string result2 = pwd.password(users);
+                    if (result2 == Convert.ToString(false))
+                    {
+                        MessageBox.Show("密码错误，请重新输入！", "温馨提示");
+                    }
+                    //判断是否允许登录
+                    else if (result2.Trim() == "禁止登录")
+                    {
+                        MessageBox.Show("非法用户，请到前台开户！", "温馨提示");
+                    }
+                    else
                     {
                         //判断用户的类型
                         string result3 = user.userlevel(username);
                         Entity.GoAnyWhere.level = result3;
                         this.DialogResult = DialogResult.OK;  //上面的执行成功则显示主窗体
-                    }
-                    else
-                    {
-                        MessageBox.Show("密码错误，请重新输入！", "温馨提示");
                     }
                 }
             }

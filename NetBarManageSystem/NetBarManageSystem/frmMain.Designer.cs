@@ -40,6 +40,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.n2 = new System.Windows.Forms.NumericUpDown();
+            this.n1 = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,28 +60,28 @@
             this.lblLoginTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.n1 = new System.Windows.Forms.NumericUpDown();
-            this.n2 = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.n1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnExitSystem);
             this.panel1.Location = new System.Drawing.Point(24, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 89);
+            this.panel1.Size = new System.Drawing.Size(148, 97);
             this.panel1.TabIndex = 1;
             // 
             // btnExitSystem
             // 
-            this.btnExitSystem.Location = new System.Drawing.Point(33, 32);
+            this.btnExitSystem.Location = new System.Drawing.Point(30, 19);
             this.btnExitSystem.Name = "btnExitSystem";
             this.btnExitSystem.Size = new System.Drawing.Size(75, 23);
             this.btnExitSystem.TabIndex = 0;
@@ -88,7 +91,7 @@
             // 
             // btnLoginManage
             // 
-            this.btnLoginManage.Location = new System.Drawing.Point(33, 97);
+            this.btnLoginManage.Location = new System.Drawing.Point(33, 71);
             this.btnLoginManage.Name = "btnLoginManage";
             this.btnLoginManage.Size = new System.Drawing.Size(75, 23);
             this.btnLoginManage.TabIndex = 1;
@@ -98,6 +101,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.btnRecharge);
             this.panel2.Controls.Add(this.txtCheck);
             this.panel2.Controls.Add(this.btnAddUsers);
@@ -109,7 +113,7 @@
             // 
             // btnRecharge
             // 
-            this.btnRecharge.Location = new System.Drawing.Point(33, 196);
+            this.btnRecharge.Location = new System.Drawing.Point(30, 141);
             this.btnRecharge.Name = "btnRecharge";
             this.btnRecharge.Size = new System.Drawing.Size(97, 23);
             this.btnRecharge.TabIndex = 3;
@@ -119,7 +123,7 @@
             // 
             // txtCheck
             // 
-            this.txtCheck.Location = new System.Drawing.Point(30, 138);
+            this.txtCheck.Location = new System.Drawing.Point(30, 98);
             this.txtCheck.Name = "txtCheck";
             this.txtCheck.Size = new System.Drawing.Size(100, 23);
             this.txtCheck.TabIndex = 2;
@@ -129,7 +133,7 @@
             // 
             // btnAddUsers
             // 
-            this.btnAddUsers.Location = new System.Drawing.Point(30, 81);
+            this.btnAddUsers.Location = new System.Drawing.Point(30, 55);
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(100, 23);
             this.btnAddUsers.TabIndex = 1;
@@ -150,9 +154,9 @@
             // 
             this.panel3.Controls.Add(this.btnLoginManage);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(24, 146);
+            this.panel3.Location = new System.Drawing.Point(24, 166);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(148, 137);
+            this.panel3.Size = new System.Drawing.Size(148, 117);
             this.panel3.TabIndex = 3;
             // 
             // label2
@@ -189,6 +193,29 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(591, 461);
             this.panel4.TabIndex = 4;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(267, 344);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(89, 12);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "设定下机时间：";
+            // 
+            // n2
+            // 
+            this.n2.Location = new System.Drawing.Point(449, 335);
+            this.n2.Name = "n2";
+            this.n2.Size = new System.Drawing.Size(49, 21);
+            this.n2.TabIndex = 17;
+            // 
+            // n1
+            // 
+            this.n1.Location = new System.Drawing.Point(373, 335);
+            this.n1.Name = "n1";
+            this.n1.Size = new System.Drawing.Size(49, 21);
+            this.n1.TabIndex = 16;
             // 
             // label15
             // 
@@ -351,28 +378,25 @@
             this.timer1.Interval = 300000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // n1
+            // button1
             // 
-            this.n1.Location = new System.Drawing.Point(373, 335);
-            this.n1.Name = "n1";
-            this.n1.Size = new System.Drawing.Size(49, 21);
-            this.n1.TabIndex = 16;
+            this.button1.Location = new System.Drawing.Point(30, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "消费情况";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // n2
+            // button2
             // 
-            this.n2.Location = new System.Drawing.Point(449, 335);
-            this.n2.Name = "n2";
-            this.n2.Size = new System.Drawing.Size(49, 21);
-            this.n2.TabIndex = 17;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(267, 344);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(89, 12);
-            this.label16.TabIndex = 18;
-            this.label16.Text = "设定下机时间：";
+            this.button2.Location = new System.Drawing.Point(30, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "用户退卡";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmMain
             // 
@@ -395,8 +419,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.n1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -434,6 +458,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown n2;
         private System.Windows.Forms.NumericUpDown n1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
 
     }
 }

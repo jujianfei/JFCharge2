@@ -25,13 +25,13 @@ namespace BLL
         }
         #endregion
 
-        #region 判断用户密码是否正确
+        #region 判断用户密码是否正确，并返回状态信息
         /// <summary>
-        /// 判断用户密码是否正确
+        /// 判断用户密码是否正确，并返回状态信息
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns></returns>
-        public bool JudgePassword(Entity.Login user)
+        public string JudgePassword(Entity.Login user)
         {
             return iu.JudgePassword(user);
         }
