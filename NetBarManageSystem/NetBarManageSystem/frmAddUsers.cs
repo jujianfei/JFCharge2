@@ -30,33 +30,45 @@ namespace NetBarManageSystem
 
         private void button1_Click(object sender, EventArgs e) //点击确定添加按钮
         {
-            Entity.Consumers cs = new Entity.Consumers();
-            cs.cardno = txtCardno.Text.Trim();
-            cs.name = txtName.Text.Trim();
-            cs.age = txtAge.Text.Trim();
-            cs.gender = cboGender.Text.Trim();
-            cs.money = txtAddMoney.Text.Trim();
-            cs.status = cboStatus.Text.Trim();
-            cs.sno = Entity.GoAnyWhere.id;
-            cs.addtime = DateTime.Now;
-            //将界面获取的数据插入到数据库中
             Facade.Consumers consumer = new Facade.Consumers();
-            int result = consumer.addconsumers(cs);   //插入到消费者信息表
-            if (result > 0)
+            //判断卡号是否存在
+            string cardno = txtCardno.Text.Trim();
+            DataTable dt = consumer.ReturnConsumeinfo(cardno);
+            if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("添加成功！", "温馨提示");
-                //将消费者信息插入到登录表中
-                Entity.Login user = new Entity.Login();
-                user.username = txtCardno.Text.Trim();
-                user.password = "123456";
-                user.level = "用户";
-                user.status = cboStatus.Text.Trim();
-                Facade.LoginUsers fuser = new Facade.LoginUsers();
-                int result2 = fuser.addusers(user);
+                MessageBox.Show("此用户已存在，请确认后重新输入！", "温馨提示");
+                txtCardno.SelectAll();
             }
             else
             {
-                MessageBox.Show("添加失败，请联系管理员","温馨提示");
+                Entity.Consumers cs = new Entity.Consumers();
+                cs.cardno = txtCardno.Text.Trim();
+                cs.name = txtName.Text.Trim();
+                cs.age = txtAge.Text.Trim();
+                cs.gender = cboGender.Text.Trim();
+                cs.money = txtAddMoney.Text.Trim();
+                cs.status = cboStatus.Text.Trim();
+                cs.sno = Entity.GoAnyWhere.id;
+                cs.addtime = DateTime.Now;
+                //将界面获取的数据插入到数据库中
+
+                int result = consumer.addconsumers(cs);   //插入到消费者信息表
+                if (result > 0)
+                {
+                    MessageBox.Show("添加成功！", "温馨提示");
+                    //将消费者信息插入到登录表中
+                    Entity.Login user = new Entity.Login();
+                    user.username = txtCardno.Text.Trim();
+                    user.password = "123456";
+                    user.level = "用户";
+                    user.status = cboStatus.Text.Trim();
+                    Facade.LoginUsers fuser = new Facade.LoginUsers();
+                    int result2 = fuser.addusers(user);
+                }
+                else
+                {
+                    MessageBox.Show("添加失败，请联系管理员", "温馨提示");
+                }
             }
         }
 

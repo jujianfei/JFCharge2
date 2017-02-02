@@ -39,7 +39,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(183, 129);
+            this.label1.Location = new System.Drawing.Point(136, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 21);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // txtCardno
             // 
             this.txtCardno.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtCardno.Location = new System.Drawing.Point(296, 129);
+            this.txtCardno.Location = new System.Drawing.Point(249, 89);
             this.txtCardno.Name = "txtCardno";
             this.txtCardno.Size = new System.Drawing.Size(198, 31);
             this.txtCardno.TabIndex = 1;
@@ -56,7 +56,7 @@
             // txtMoney
             // 
             this.txtMoney.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMoney.Location = new System.Drawing.Point(296, 176);
+            this.txtMoney.Location = new System.Drawing.Point(249, 136);
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(198, 31);
             this.txtMoney.TabIndex = 3;
@@ -65,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(183, 176);
+            this.label2.Location = new System.Drawing.Point(136, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 21);
             this.label2.TabIndex = 2;
@@ -75,7 +75,7 @@
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnOK.Location = new System.Drawing.Point(419, 243);
+            this.btnOK.Location = new System.Drawing.Point(372, 203);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 28);
             this.btnOK.TabIndex = 5;
@@ -87,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 401);
+            this.ClientSize = new System.Drawing.Size(582, 320);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtMoney);
             this.Controls.Add(this.label2);

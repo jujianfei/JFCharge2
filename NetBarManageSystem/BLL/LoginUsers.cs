@@ -13,6 +13,7 @@ namespace BLL
         {
             iu = Factory.DataAccess.Users();
         }
+
         #region 判断用户是否存在
         /// <summary>
         /// 判断用户是否存在

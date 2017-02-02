@@ -80,7 +80,15 @@ namespace NetBarManageSystem
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e) //点击窗体右上角红叉
         {
-            ExitSystem();
+            if (DialogResult.Yes == MessageBox.Show("是否退出系统？", "系统提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                this.Dispose();
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         private void frmMain_Load(object sender, EventArgs e) //窗体加载事件
@@ -117,11 +125,13 @@ namespace NetBarManageSystem
             {
                 panel1.Hide();
                 panel3.Hide();
+                panel4.Hide();
             }
             else
             {
                 panel1.Hide();
                 panel2.Hide();
+                panel4.Hide();
             }
         }
 

@@ -39,40 +39,45 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 53);
+            this.label1.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(94, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(98, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "用户名：";
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(132, 50);
+            this.txtUserName.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtUserName.Location = new System.Drawing.Point(198, 67);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(100, 21);
+            this.txtUserName.Size = new System.Drawing.Size(167, 31);
             this.txtUserName.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(132, 97);
+            this.txtPassword.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtPassword.Location = new System.Drawing.Point(198, 117);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 21);
+            this.txtPassword.Size = new System.Drawing.Size(167, 31);
             this.txtPassword.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 100);
+            this.label2.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(94, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(98, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "密　码：";
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(157, 158);
+            this.btnOk.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnOk.Location = new System.Drawing.Point(292, 177);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.Size = new System.Drawing.Size(73, 33);
             this.btnOk.TabIndex = 4;
             this.btnOk.Text = "确定";
             this.btnOk.UseVisualStyleBackColor = true;
@@ -80,9 +85,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(75, 158);
+            this.btnDelete.Font = new System.Drawing.Font("隶书", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnDelete.Location = new System.Drawing.Point(198, 177);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(77, 33);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -92,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 241);
+            this.ClientSize = new System.Drawing.Size(458, 276);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtPassword);
@@ -101,7 +107,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAddManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "添加用户窗体";
+            this.Text = "用户管理";
             this.ResumeLayout(false);
             this.PerformLayout();
 
