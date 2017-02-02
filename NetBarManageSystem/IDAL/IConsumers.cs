@@ -19,5 +19,11 @@ namespace IDAL
         DataTable CheckConsumeInfo(string cardno);//根据用户id查询消费记录信息
         string LookMoney(string cardno);//根据用户id查询消费者余额
         int AddBackInfo(Entity.BackMoney backinfo);//插入一行用户退卡信息
+        DataTable ReturnBackInfo();//返回一张退卡信息表
+        DataTable ReturnRegister();//返回一张注册信息记录表
+        DataTable ReturnRecharge();//返回一张充值记录表
+        int ReturnRegisterSum();//返回注册表注册金额的总数
+        int ReturnBackSum();//返回退款表中金额的总数
+        int ReturnRechargeSum();//返回充值表中金额的总数
     }
 }

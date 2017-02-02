@@ -169,5 +169,11 @@ namespace NetBarManageSystem
             frmConsumerBackMoney f = new frmConsumerBackMoney();
             f.ShowDialog();
         }
+
+        private void btnBill_Click(object sender, EventArgs e) //点击账单按钮
+        {
+            frmBill f = new frmBill();
+            f.ShowDialog();
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace NetBarManageSystem
             Entity.BackMoney backmoney = new Entity.BackMoney();
             backmoney.cardno = cardno;
             backmoney.money = txtMoney.Text.Trim();
-            backmoney.operater = Entity.GoAnyWhere.cardno;
+            backmoney.operater = Entity.GoAnyWhere.id;
             backmoney.time = DateTime.Now;
             int result = consumer.AddBackInfo(backmoney);
             if (result > 0)

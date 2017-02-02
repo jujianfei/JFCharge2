@@ -152,5 +152,71 @@ namespace Facade
             return CS.AddBackInfo(backinfo);
         }
         #endregion
+
+        #region 返回一张退卡信息
+        /// <summary>
+        /// 返回一张退卡信息
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnBackInfo()
+        {
+            return CS.ReturnBackInfo();
+        }
+        #endregion
+
+        #region 返回一张注册信息表
+        /// <summary>
+        /// 返回一张注册信息表
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnRegister()
+        {
+            return CS.ReturnRegister();
+        }
+        #endregion
+
+        #region 返回一张充值信息记录表
+        /// <summary>
+        /// 返回一张充值信息记录表
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnRecharge()
+        {
+            return CS.ReturnRecharge();
+        }
+        #endregion
+
+        #region 获取注册表中注册的金额总数
+        /// <summary>
+        /// 获取注册表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnRegisterSum()
+        {
+            return CS.ReturnRegisterSum();
+        }
+        #endregion
+
+        #region 获取退款表中注册的金额总数
+        /// <summary>
+        /// 获取退款表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnBackSum()
+        {
+            return CS.ReturnBackSum();
+        }
+        #endregion
+
+        #region 获取充值表中注册的金额总数
+        /// <summary>
+        /// 获取充值表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnRechargeSum()
+        {
+            return CS.ReturnRechargeSum();
+        }
+        #endregion
     }
 }

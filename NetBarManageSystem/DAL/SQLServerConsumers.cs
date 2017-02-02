@@ -191,5 +191,80 @@ namespace DAL
             return sqlhelper.ExecuteNonQuery(sql);
         }
         #endregion
+
+        #region 返回一张退卡记录表信息
+        /// <summary>
+        /// 返回一张退卡记录表信息
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnBackInfo()
+        {
+            string sql = "select * from BackMoney";
+            return sqlhelper.ExecuteQuery(sql);
+        }
+        #endregion
+
+        #region 返回一张注册信息记录表
+        /// <summary>
+        /// 返回一张注册信息记录表
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnRegister()
+        {
+            string sql = "select * from Register";
+            return sqlhelper.ExecuteQuery(sql);
+        }
+        #endregion
+
+        #region 返回一张充值信息记录表
+        /// <summary>
+        /// 返回一张充值信息记录表
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnRecharge()
+        {
+            string sql = "select * from Recharge";
+            return sqlhelper.ExecuteQuery(sql);
+        }
+        #endregion
+
+        #region 获取注册表中注册的金额总数
+        /// <summary>
+        /// 获取注册表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnRegisterSum()
+        {
+            string sql = "select sum(Num) from Register";
+            DataTable dt = sqlhelper.ExecuteQuery(sql);
+            return Convert.ToInt32(dt.Rows[0][0]);
+        }
+        #endregion
+
+        #region 获取退款表中注册的金额总数
+        /// <summary>
+        /// 获取退款表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnBackSum()
+        {
+            string sql = "select sum(Number) from BackMoney";
+            DataTable dt = sqlhelper.ExecuteQuery(sql);
+            return Convert.ToInt32(dt.Rows[0][0]);
+        }
+        #endregion
+
+        #region 获取充值表中注册的金额总数
+        /// <summary>
+        /// 获取充值表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnRechargeSum()
+        {
+            string sql = "select sum(Num) from Recharge";
+            DataTable dt = sqlhelper.ExecuteQuery(sql);
+            return Convert.ToInt32(dt.Rows[0][0]);
+        }
+        #endregion
     }
 }

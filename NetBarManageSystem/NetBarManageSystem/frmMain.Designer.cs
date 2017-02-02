@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnExitSystem = new System.Windows.Forms.Button();
             this.btnLoginManage = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnRecharge = new System.Windows.Forms.Button();
             this.txtCheck = new System.Windows.Forms.Button();
             this.btnAddUsers = new System.Windows.Forms.Button();
@@ -60,8 +62,7 @@
             this.lblLoginTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBill = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,8 +77,18 @@
             this.panel1.Controls.Add(this.btnExitSystem);
             this.panel1.Location = new System.Drawing.Point(24, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 97);
+            this.panel1.Size = new System.Drawing.Size(148, 117);
             this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(30, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "消费情况";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnExitSystem
             // 
@@ -106,10 +117,20 @@
             this.panel2.Controls.Add(this.txtCheck);
             this.panel2.Controls.Add(this.btnAddUsers);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(24, 304);
+            this.panel2.Location = new System.Drawing.Point(24, 346);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(148, 249);
+            this.panel2.Size = new System.Drawing.Size(148, 219);
             this.panel2.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(30, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "用户退卡";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnRecharge
             // 
@@ -152,11 +173,12 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnBill);
             this.panel3.Controls.Add(this.btnLoginManage);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(24, 166);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(148, 117);
+            this.panel3.Size = new System.Drawing.Size(148, 161);
             this.panel3.TabIndex = 3;
             // 
             // label2
@@ -378,25 +400,15 @@
             this.timer1.Interval = 300000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
+            // btnBill
             // 
-            this.button1.Location = new System.Drawing.Point(30, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "消费情况";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(30, 184);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "用户退卡";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnBill.Location = new System.Drawing.Point(33, 116);
+            this.btnBill.Name = "btnBill";
+            this.btnBill.Size = new System.Drawing.Size(75, 23);
+            this.btnBill.TabIndex = 2;
+            this.btnBill.Text = "账单";
+            this.btnBill.UseVisualStyleBackColor = true;
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // frmMain
             // 
@@ -460,6 +472,7 @@
         private System.Windows.Forms.NumericUpDown n1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBill;
 
     }
 }

@@ -151,5 +151,71 @@ namespace BLL
             return ic.AddBackInfo(backinfo);
         }
         #endregion
+
+        #region 返回一张退卡信息
+        /// <summary>
+        /// 返回一张退卡信息
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnBackInfo()
+        {
+            return ic.ReturnBackInfo();
+        }
+        #endregion
+
+        #region 返回一张注册信息表
+        /// <summary>
+        /// 返回一张注册信息表
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnRegister()
+        {
+            return ic.ReturnRegister();
+        }
+        #endregion
+
+        #region 返回一张充值信息记录表
+        /// <summary>
+        /// 返回一张充值信息记录表
+        /// </summary>
+        /// <returns></returns>
+        public DataTable ReturnRecharge()
+        {
+            return ic.ReturnRecharge();
+        }
+        #endregion
+
+        #region 获取注册表中注册的金额总数
+        /// <summary>
+        /// 获取注册表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnRegisterSum()
+        {
+            return ic.ReturnRegisterSum();
+        }
+        #endregion
+
+        #region 获取退款表中注册的金额总数
+        /// <summary>
+        /// 获取退款表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnBackSum()
+        {
+            return ic.ReturnBackSum();
+        }
+        #endregion
+
+        #region 获取充值表中注册的金额总数
+        /// <summary>
+        /// 获取充值表中注册的金额总数
+        /// </summary>
+        /// <returns></returns>
+        public int ReturnRechargeSum()
+        {
+            return ic.ReturnRechargeSum();
+        }
+        #endregion
     }
 }
